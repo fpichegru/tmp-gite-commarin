@@ -55,7 +55,7 @@ body{
 }
 
 .inner-body-wrapper{
-    overflow: hidden;
+    overflow-x: hidden;
     border: 20px solid red;
 }
 
