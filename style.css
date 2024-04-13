@@ -53,7 +53,7 @@
 
 body{
     font-family: var(--base-font), sans-serif;
-    /* overflow: hidden; */
+    overflow-x: hidden; 
 }
 
 ul{
