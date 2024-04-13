@@ -172,7 +172,7 @@ a{
 
 
 header{
-    position: sticky;
+    position: fixed;
     top: 0px;
     background-color: var(--main-green);
     width: 100%;
@@ -470,6 +470,7 @@ header{
 
         display: none;
     }
+
 
     .hamburger-menu-container{
         display: flex;
