@@ -49,11 +49,12 @@
 
 
 html, body {
-  overflow-x:hidden;
+
 }
 
 body{
     font-family: var(--base-font), sans-serif;
+    overflow-x:hidden;
 }
 
 
