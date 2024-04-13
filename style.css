@@ -54,6 +54,11 @@ body{
     font-family: var(--base-font), sans-serif;
 }
 
+.inner-body-wrapper{
+    overflow: hidden;
+    border: 2px solid red;
+}
+
 ul{
     list-style: none;
 }
