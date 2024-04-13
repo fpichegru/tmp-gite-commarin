@@ -176,7 +176,7 @@ header{
     top: 0px;
     background-color: var(--main-green);
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
     transition: 0.4s ;
 }
 
@@ -626,42 +626,40 @@ header{
 
 /* HERO SECTION */
 
-.hero-accueil{
+
+.hero-accueil, .hero-activites, .hero-gite{
+
       min-height: 700px;
+    background-size: cover;
+    position: relative;
+    background-position: 50% 50%;
+    text-align: center;
+     margin-top: 10rem ;
+    color: var(--main-white);
+
+}
+
+
+.hero-accueil{
+     
  
   background-image: url(img//accueil/salon-hero.jpg);
-  background-size: cover;
-  position: relative;
-  background-position: 50% 50%;
-  text-align: center;
-  color: var(--main-white);
+
 }
 
 .hero-gite{
-      min-height: 700px;
+
  
   background-image: url(img/gite/gite-hero.jpg);
-  background-size: cover;
-  position: relative;
-  background-position: 50% 50%;
-  text-align: center;
-  color: var(--main-white);
+
 }
 
 .hero-activites{
-  min-height: 700px;
-  display: flex;
+
 
   background-image: url(img/activites/Hero_activites_Credit_photo_Xavier_Spertini.jpg);
-  background-size: cover;
-  position: relative;
-  background-position: 50% 50%;
-  text-align: center;
-  color: var(--main-white);
+
 }
-
-
-
 
 .overlay{
     position: absolute;
@@ -737,6 +735,7 @@ header{
 
     .hero-accueil,     .hero-gite, .hero-activites {
        min-height: 500px;
+       margin-top: 0rem;
     }
 
 
@@ -1252,6 +1251,172 @@ header{
 }
 
 
+
+
+/* PAGE ACTIVITÉS */
+.more-links{
+
+    font-family: var(--base-font);
+    font-size: var(--fs-20);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--text-dark-grey);
+    letter-spacing: 2px;
+    text-decoration: underline;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+
+}
+
+
+.more-links-list{
+
+    list-style:circle;
+    font-family: var(--base-font);
+    color: var(--text-dark-grey);
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-bottom: 7rem;
+}
+
+
+.more-links-list li{
+
+  margin-bottom: 1.5rem;
+}
+
+.more-links-list li a{
+
+    color: var(--text-dark-grey);
+}
+
+
+.sub-title-icon{
+
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+}
+
+.sub-title-container{
+
+    display: flex;
+    align-items:last baseline;
+ 
+}
+
+
+/* PAGE RESERVATION */
+
+.container-reservation{
+
+    width: 70%;
+    max-width: 550px;
+    margin: 16rem auto 6rem;
+    padding: 0 2.5rem;
+  
+    background: var(--main-white);
+    border: 1px solid var(--main-green);
+    box-shadow: 0 2px 4px 0 var(--light-grey);
+}
+
+.reservation-link{
+
+    font-style: var(--base-font);
+    font-size: var(--fs-20);
+    color:var(--main-black);
+    letter-spacing: 2px;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    background-color: var(--main-green);
+    cursor: pointer;
+    max-width: 20rem;
+    margin-bottom: 2rem;
+}
+
+.reservation-link:hover{
+
+    background-color: var(--shaded-green);
+    box-shadow: 1px 1px 1px 0  var(--text-dark-grey);
+    color: var(--main-white);
+}
+
+.reservation-link-container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+
+
+}
+
+.reservation-link-container img{
+
+    width: 4rem;
+    height: 4rem;
+    
+}
+
+
+@media (max-width: 800px){
+
+    .container-reservation{
+
+    margin: 8rem auto;
+    width: 95%;
+
+    }
+}
+
+
+
+
+/* PAGE CONTACT */
+
+.container-contact{
+
+    width: 80%;
+    max-width: 700px;
+    margin: 16rem auto 6rem;
+    padding: 0 2.5rem;
+    background: var(--main-white);
+    border: 1px solid var(--main-green);
+    box-shadow: 0 2px 4px 0 var(--light-grey);
+}
+
+.map-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+iframe{
+
+    width: 100%;
+}
+
+@media (max-width: 800px){
+
+    .container-contact{
+    margin: 4rem auto;
+    width: 95%;
+     padding: 0 1rem;
+     border:none;
+     box-shadow: none;
+
+    }
+
+    iframe{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+
 /* FOOTER */
 
 footer{
@@ -1330,164 +1495,3 @@ footer p:nth-child(2){
 }
 }
 
-
-/* PAGE ACTIVITÉS */
-.more-links{
-
-    font-family: var(--base-font);
-    font-size: var(--fs-20);
-    font-style: italic;
-    font-weight: 500;
-    color: var(--text-dark-grey);
-    letter-spacing: 2px;
-    text-decoration: underline;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-
-}
-
-
-.more-links-list{
-
-    list-style:circle;
-    font-family: var(--base-font);
-    color: var(--text-dark-grey);
-    font-weight: 600;
-    margin-left: 2rem;
-    margin-bottom: 7rem;
-}
-
-
-.more-links-list li{
-
-  margin-bottom: 1.5rem;
-}
-
-.more-links-list li a{
-
-    color: var(--text-dark-grey);
-}
-
-
-.sub-title-icon{
-
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-left: 1rem;
-}
-
-.sub-title-container{
-
-    display: flex;
-    align-items:last baseline;
- 
-}
-
-
-/* PAGE RESERVATION */
-
-.container-reservation{
-
-    width: 70%;
-    max-width: 550px;
-    margin: 6rem auto;
-    padding: 0 2.5rem;
-  
-    background: var(--main-white);
-    border: 1px solid var(--main-green);
-    box-shadow: 0 2px 4px 0 var(--light-grey);
-}
-
-.reservation-link{
-
-    font-style: var(--base-font);
-    font-size: var(--fs-20);
-    color:var(--main-black);
-    letter-spacing: 2px;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-    background-color: var(--main-green);
-    cursor: pointer;
-    max-width: 20rem;
-    margin-bottom: 2rem;
-}
-
-.reservation-link:hover{
-
-    background-color: var(--shaded-green);
-    box-shadow: 1px 1px 1px 0  var(--text-dark-grey);
-    color: var(--main-white);
-}
-
-.reservation-link-container{
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 4rem;
-
-
-}
-
-.reservation-link-container img{
-
-    width: 4rem;
-    height: 4rem;
-    
-}
-
-
-@media (max-width: 800px){
-
-    .container-reservation{
-
-    width: 95%;
-
-    }
-}
-
-
-
-
-/* PAGE CONTACT */
-
-.container-contact{
-
-    width: 80%;
-    max-width: 700px;
-    margin: 6rem auto;
-    padding: 0 2.5rem;
-    background: var(--main-white);
-    border: 1px solid var(--main-green);
-    box-shadow: 0 2px 4px 0 var(--light-grey);
-}
-
-.map-container{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 4rem;
-}
-
-iframe{
-
-    width: 100%;
-}
-
-@media (max-width: 800px){
-
-    .container-contact{
-    margin: 4rem auto;
-    width: 95%;
-     padding: 0 1rem;
-     border:none;
-     box-shadow: none;
-
-    }
-
-    iframe{
-        width: 100%;
-        height: 400px;
-    }
-}
