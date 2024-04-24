@@ -79,16 +79,30 @@ a{
     margin: 0 auto;
     height: 9rem;
     background-size: cover;
+    
+ 
    
   
 
 }
 
+
+.top-header-hero .logo-img{
+
+    width: 18rem;
+    padding: 2rem;
+}
+
 .background-acceuil{
 
-       background-image: url(img/gite/cerfs-groupe.jpg);
-        background-position: 50% 60%;
+     /* background-image: url(img/gite/cerfs-groupe.jpg);
+    background-position: 50% 60%; */
+    /* background-color: var(--main-green); */
+        
 }
+
+
+
 
 .background-activites{
 
@@ -125,6 +139,11 @@ a{
     justify-content: center;
 }
 
+.background-acceuil .overlay-top{
+
+      background-color: rgba(0, 0, 0, 0);
+}
+
 .top-header-content{
 
    height: 100%;  
@@ -144,10 +163,11 @@ a{
     font-family: var(--base-font);
     font-size: var(--fs-16);
     font-weight: 300;
+
 }
 
 
-.top-header-content p:nth-child(2){
+.top-header-content p:nth-child(3){
 
    text-align: right;
    
@@ -210,6 +230,13 @@ header{
     display: flex;
     align-items: center;
     height: 3rem;
+    display: none;
+}
+
+.logo-small{
+
+    width: 5.2rem;
+    padding: 0.2rem;
 }
 
 .nav-btn{
@@ -471,6 +498,9 @@ header{
         display: none;
     }
 
+    .logo-container{
+        display: block;
+    }
 
     .hamburger-menu-container{
         display: flex;
@@ -1425,6 +1455,8 @@ footer{
     max-width: 1100px; 
     margin: 0 auto;
     display: flex;
+    padding-bottom: 5rem;
+
     justify-content: space-between;
 }
 
@@ -1441,7 +1473,12 @@ footer p{
 
 }
 
-footer p:nth-child(2){
+.logo-footer{
+
+    width: 12rem;
+}
+
+footer p:nth-child(3){
 
     text-align: right;
 }
@@ -1487,9 +1524,10 @@ footer p:nth-child(2){
         text-align: center;
         font-size: var(--fs-16);
           color: var(--main-black);
+          margin-bottom: 2rem;
     }
 
-    footer p:nth-child(2){
+    footer p:nth-child(3){
         margin-top: 2rem;
         text-align: center;
 }
