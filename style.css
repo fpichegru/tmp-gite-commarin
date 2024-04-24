@@ -774,8 +774,6 @@ header{
      padding-top: 100px;  
      font-size: var(--fs-50); 
 }
-
-
     .main-title{
     font-size: var(--fs-42);
     }
@@ -1017,7 +1015,9 @@ header{
 
     list-style:circle;
     font-family: var(--base-font);
-    color: var(--text-dark-grey);
+    color: var(--text-grey);
+    letter-spacing: 1px;
+    line-height: 1.5rem;
     font-weight: 600;
     margin-left: 1rem;
     margin-bottom: 3rem;
@@ -1499,10 +1499,11 @@ footer p:nth-child(3){
 .footer-vertical p{
         text-align: center;
         font-size: var(--fs-16);
-          color: var(--main-black);
+        color: var(--main-black);
+        margin-bottom: 2rem ;
 }
 
-.footer-vertical p:nth-child(2){
+.footer-vertical p:nth-child(3){
         margin-top: 2rem;
         text-align: center;
 }
