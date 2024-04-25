@@ -1177,7 +1177,7 @@ header{
 
 }
 
-.text-desc span{
+.text-desc span , .services-list  span{
 
      font-weight: bold;
      color: var(--main-black);
